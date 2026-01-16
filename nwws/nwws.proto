@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package streaming;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "github.com/metdatasystem/protos/nwws"
+
+message Message {
+    google.protobuf.Timestamp received = 1;
+    string ttaaii = 2;
+    string cccc = 3;
+    string awips = 4;
+    string text = 5;
+}
